@@ -6,9 +6,9 @@ package homework.lab1_2;
 public class MinSeq {
 
     private double limit;
-    private static double a;
+    private double a;
 
-    public static void findMin(double limit)
+    public void findMin(double limit)
     {
         for (int n = 0; ; n++)
         {
@@ -22,9 +22,5 @@ public class MinSeq {
                 System.out.println("Номер элемента последовательности: " + n + " вычисленное значение: " + a);
             }
         }
-    }
-
-    public static void main(String[] args) {
-        findMin(.04);
     }
 }
