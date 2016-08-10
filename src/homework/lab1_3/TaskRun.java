@@ -5,8 +5,6 @@ package homework.lab1_3;
  */
 public class TaskRun {
     public static void main(String[] args) {
-
-        Tangent tg = new Tangent();
-        tg.func(0, 68.8, 5.3);
+        Tangent.func(0, 68.8, 5.3);
     }
 }
