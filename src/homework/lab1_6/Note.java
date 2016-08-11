@@ -1,5 +1,7 @@
 package homework.lab1_6;
 
+import java.util.Date;
+
 /**
  * Created by user on 03.08.16.
  * Домашнее задание 1.6
@@ -10,6 +12,7 @@ package homework.lab1_6;
 public class Note {
 
     private String s;
+    private Date dateOfCreate;
 
     /**
      * Данный конструктор создает запись по умолчанию
@@ -17,6 +20,7 @@ public class Note {
     public Note()
     {
         s = "Default note";
+        dateOfCreate = new Date();
     }
 
     /**
@@ -26,6 +30,7 @@ public class Note {
     public Note(String s)
     {
         this.s = s;
+        dateOfCreate = new Date();
     }
 
     @Override
@@ -33,4 +38,9 @@ public class Note {
     {
         return s;
     }
+
+    public Date getDateOfCreate(){
+        return dateOfCreate;
+    }
+
 }

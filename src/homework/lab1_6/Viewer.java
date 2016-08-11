@@ -25,5 +25,6 @@ public class Viewer {
         notepad.showAllNotes();
         notepad.delNote(11);
         notepad.addNote(new Note("Empty."));
+        notepad.getNote(0);
     }
 }
