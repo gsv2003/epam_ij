@@ -17,8 +17,8 @@ public class Main {
 
         Employee gloukhov = new Employee("Gloukhov", setNewEmployee);
         Employee newEmployee = new Employee();
-        System.out.println(gloukhov.getTotalPrice());
-        System.out.println(newEmployee.getTotalPrice());
+        gloukhov.getTotalPrice();
+        newEmployee.getTotalPrice();
     }
 
 }

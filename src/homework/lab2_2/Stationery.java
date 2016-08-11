@@ -7,11 +7,13 @@ public class Stationery {
 
     private String name;
     private double price;
+    private static final String DEFAULT_NAME = "Pen";
+    private static final double DEFAULT_PRICE = 1.25;
 
     public Stationery()
     {
-        this.name = "Pen";
-        this.price = 1.25;
+        this.name = DEFAULT_NAME;
+        this.price = DEFAULT_PRICE;
     }
 
     public Stationery(String name,double price)

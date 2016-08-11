@@ -5,30 +5,32 @@ package homework.lab2_2;
  */
 public class Employee {
 
-    private String Surname;
+    private String surname;
     private Stationery[] set;
-    private double totalPrice;
+    public static final String DEFAULT_NAME = "Ivanov";
+    public static final int DEFAULT_SET_SIZE = 2;
 
     public Employee()
     {
-        this.Surname = "Ivanov";
-        this.set = new Stationery[2];
+        this.surname = DEFAULT_NAME;
+        this.set = new Stationery[DEFAULT_SET_SIZE];
         this.set[0] = new Stationery();
         this.set[1] = new Stationery("pencil", 0.85);
     }
 
     public Employee(String Surname, Stationery[] set)
     {
-        this.Surname = Surname;
+        this.surname = Surname;
         this.set = set;
     }
 
-    public double getTotalPrice()
+    public void getTotalPrice()
     {
+        double totalPrice = 0.0;
         for (Stationery s: this.set)
         {
             totalPrice += s.getPrice();
         }
-        return totalPrice;
+        System.out.println(totalPrice);
     }
 }
