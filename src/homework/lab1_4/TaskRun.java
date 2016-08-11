@@ -5,13 +5,12 @@ package homework.lab1_4;
  */
 public class TaskRun {
     public static void main(String[] args) {
-        int[] arr = new int[5];
+        int[] arr = new int[10];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random()*10);
             System.out.printf("%2d", arr[i]);
         }
         System.out.println();
-        Maximum max = new Maximum();
-        max.max(arr);
+        Maximum.max(arr);
     }
 }

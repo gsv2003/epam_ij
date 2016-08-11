@@ -7,16 +7,15 @@ import java.util.Arrays;
  */
 public class Maximum {
 
-    private int max;
-
-    public void max(int[] arr)
+    public static void max(int[] arr)
     {
-        int[] newArr = new int[arr.length/2];
-        for (int i = 0; i < newArr.length; i++) {
-            newArr[i] = arr[i] + arr[arr.length - i - 1];
+        int max = 0;
+        for (int i = 0; i < arr.length / 2; i++) {
+            int max1 = arr[i] + arr[arr.length - i - 1];
+            if (max < max1) {
+                max = max1;
+            }
         }
-        Arrays.sort(newArr);
-        max = newArr[newArr.length-1];
         System.out.println("Максимальный элемент последовательности: " + max);
     }
 }
