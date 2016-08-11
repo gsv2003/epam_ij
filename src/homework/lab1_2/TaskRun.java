@@ -5,7 +5,6 @@ package homework.lab1_2;
  */
 public class TaskRun {
     public static void main(String[] args) {
-        MinSeq ms = new MinSeq();
-        ms.findMin(.04);
+        MinSeq.findMin(.004);
     }
 }
